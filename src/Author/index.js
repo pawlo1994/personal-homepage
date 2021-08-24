@@ -3,21 +3,16 @@ import mail from "./mail.svg";
 import darkThemeOn from "./darkThemeOn.svg";
 import darkThemeOff from "./darkThemeOff.svg";
 import { ContactButton, DarkModeSwitch, Description, Header, HeaderTitle, Image, Subheader, Wrapper } from "./styled";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleDarkMode, selectDarkMode } from "../themeSlice";
 
 export const Author = () => {
-    let darkModeActive = false;
+    const dispatch = useDispatch();
+    const darkMode = useSelector(selectDarkMode);
     return (
         <Wrapper>
-            <DarkModeSwitch onClick={
-                () => {
-                    darkModeActive = !darkModeActive;
-                }
-            }>
-                {darkModeActive === false ?
-                    <img src={darkThemeOff} alt="switch theme" /> :
-                    <img src={darkThemeOn} alt="switch theme" />
-                }
-
+            <DarkModeSwitch onClick={() => dispatch(toggleDarkMode())}>
+                <img src={darkMode ? darkThemeOn : darkThemeOff} alt="switch theme" />
             </DarkModeSwitch>
             <Image src={authorImage} alt="author" />
             <Header>
