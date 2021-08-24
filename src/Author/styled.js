@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const DarkModeSwitch = styled.button`
     position: absolute;
     display: flex;
