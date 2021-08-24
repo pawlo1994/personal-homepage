@@ -7,3 +7,10 @@ export const theme = {
         scienceBlue: "#0366D6",
     }
 };
+
+export const dark = {
+    color: {
+        white: "#252525",
+        mineShaft: "FFFFFF",
+    }
+};
