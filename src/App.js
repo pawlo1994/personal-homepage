@@ -1,5 +1,5 @@
 import { ThemeProvider } from "styled-components";
-import { Author } from "./Author";
+import { Author } from "./features/author";
 import GlobalStyle from "./common/globalStyle";
 import { theme } from "./theme";
 import { Provider } from "react-redux";

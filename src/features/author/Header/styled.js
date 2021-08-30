@@ -1,53 +1,10 @@
 import styled from "styled-components";
 
-export const DarkModeSwitch = styled.button`
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: unset;
-    border: none;
-    width: 47,06px;
-    height: 25,07px;
-    right: 0;
-    top: 0;
-
-    &:hover{
-        cursor: pointer;
-    }
-    `;
-
-export const Wrapper = styled.div`
-    position: relative;
-    padding: 16px;
-    max-width: 1216px;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-gap: 66px;
-    margin: 63px auto;
-
-    @media(max-width: 767px){
-        margin: 32,67px auto;
-        grid-template-columns: 1fr;
-    }
-`;
-
-export const Header = styled.header`
+export const StyledHeader = styled.header`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-`;
-
-export const Image = styled.img`
-    width: 398px;
-    height: 398px;
-    border-radius: 50%;
-
-    @media(max-width: 767px){
-        width: 132.67px;
-        height: 132.67px;
-    }
 `;
 
 export const Subheader = styled.p`
@@ -101,4 +58,3 @@ export const ContactButton = styled.a`
         box-shadow: inset 0px 2px 0px rgba(20, 70, 32, 0.2);
     }
 `;
-
