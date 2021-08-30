@@ -19,6 +19,11 @@ export const HeaderTitle = styled.h1`
     line-height: 46px;
     letter-spacing: 0.05em;
     margin: 0 0 35px;
+
+    @media(max-width:767px){
+        font-size: 22px;
+        margin: 0 0 16px;
+    }
 `;
 
 export const Description = styled.p`
@@ -26,6 +31,10 @@ export const Description = styled.p`
     line-height: 28px;
     letter-spacing: 0.05em;
     margin: 0 0 32px;
+
+    @media(max-width: 767px){
+        font-size: 17px;
+    }
 `;
 
 export const ContactButton = styled.a`

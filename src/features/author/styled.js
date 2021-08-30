@@ -13,6 +13,7 @@ export const Wrapper = styled.div`
     @media(max-width: 767px){
         margin: 32,67px auto;
         grid-template-columns: 1fr;
+        grid-gap: 12.67px;
     }
 `;
 
