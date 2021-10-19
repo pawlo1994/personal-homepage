@@ -48,7 +48,7 @@ export const ContactButton = styled.a`
     border-radius: 4px;
     text-decoration: none;
     background-color: ${({ theme }) => theme.color.scienceBlue};
-    color: ${({ theme }) => theme.color.white};
+    color: ${({ theme }) => theme.color.buttonTextColor};
     width: 154px;
     height: 49px;
 
