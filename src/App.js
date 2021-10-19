@@ -1,18 +1,17 @@
 import { ThemeProvider } from "styled-components";
 import { Author } from "./features/author";
 import GlobalStyle from "./globalStyle";
-import { theme } from "./theme";
-import { Provider } from "react-redux";
-import store from "./store";
+import { dark, theme } from "./theme";
+import { useSelector } from "react-redux";
+import { selectDarkMode } from "./themeSlice";
 
 function App() {
+  const darkMode = useSelector(selectDarkMode);
   return (
-    <Provider store={store}>
-      <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <Author />
-      </ThemeProvider>
-    </Provider>
+    <ThemeProvider theme={!darkMode ? theme : dark}>
+      <GlobalStyle />
+      <Author />
+    </ThemeProvider>
   );
 }
 
