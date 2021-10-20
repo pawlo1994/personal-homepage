@@ -1,4 +1,4 @@
-export const theme = {
+export const light = {
     color: {
         white: "#FFFFFF",
         whiteLilac: "#FBFBFE",

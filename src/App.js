@@ -1,16 +1,28 @@
 import { ThemeProvider } from "styled-components";
 import { Author } from "./features/author";
 import GlobalStyle from "./globalStyle";
-import { dark, theme } from "./theme";
+import { dark, light } from "./theme";
 import { useSelector } from "react-redux";
 import { selectDarkMode } from "./themeSlice";
+import { Wrapper } from "./common/Wrapper";
+import { Section } from "./common/Section";
 
 function App() {
   const darkMode = useSelector(selectDarkMode);
   return (
-    <ThemeProvider theme={!darkMode ? theme : dark}>
+    <ThemeProvider theme={!darkMode ? light : dark}>
       <GlobalStyle />
-      <Author />
+      <Wrapper>
+        <Author />
+        <Section
+          header="My skillset includes 🛠️"
+          listContent={<li>1</li>}
+        />
+        <Section
+          header="What I want to learn next 🚀"
+          listContent={<li>2</li>}
+        />
+      </Wrapper>
     </ThemeProvider>
   );
 }
