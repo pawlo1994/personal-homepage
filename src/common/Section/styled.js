@@ -14,11 +14,28 @@ export const SectionHeader = styled.h2`
     font-weight: 900;
     letter-spacing: 0.05em;
     padding-bottom: 13px;
-    color: ${({ theme }) => theme.color.buttonTextColor};
+    color: ${({ theme }) => theme.color.headerTextColor};
+    border-bottom: 1px solid ${({ theme }) => theme.color.headerUnderlineColor};
 `;
 
 export const SectionList = styled.ul`
     padding-left: 0;
     color: ${({ theme }) => theme.color.slateGray};
     font-size: 18px;
+    columns: 3;
+
+    @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}){
+        columns: 1;
+    }
+`;
+
+export const SectionListItem = styled.li`
+    list-style-position: inside;
+    color: ${({ theme }) => theme.color.listItemColor};
+    margin-bottom: 8px;
+
+    &::marker{
+        width: 9px;
+        color: ${({ theme }) => theme.color.markerColor};
+    };
 `;
