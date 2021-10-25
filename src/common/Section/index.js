@@ -1,4 +1,4 @@
-import { StyledSection, SectionHeader, SectionList } from "./styled";
+import { StyledSection, SectionHeader, SectionList, SectionListItem } from "./styled";
 
 export const Section = ({ header, listContent }) => {
     return (
@@ -7,7 +7,11 @@ export const Section = ({ header, listContent }) => {
                 {header}
             </SectionHeader>
             <SectionList>
-                {listContent}
+                {listContent.map((listItem, id) =>
+                    <SectionListItem key={id}>
+                        {listItem}
+                    </SectionListItem>
+                )}
             </SectionList>
         </StyledSection>
     );
