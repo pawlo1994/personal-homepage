@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 import { selectDarkMode } from "./themeSlice";
 import { Wrapper } from "./common/Wrapper";
 import { Section } from "./common/Section";
+import { skillset, toLearn } from "./features/author/skillsAndToLearn";
 
 function App() {
   const darkMode = useSelector(selectDarkMode);
@@ -16,11 +17,11 @@ function App() {
         <Author />
         <Section
           header="My skillset includes 🛠️"
-          listContent={<li>1</li>}
+          listContent={skillset}
         />
         <Section
           header="What I want to learn next 🚀"
-          listContent={<li>2</li>}
+          listContent={toLearn}
         />
       </Wrapper>
     </ThemeProvider>
