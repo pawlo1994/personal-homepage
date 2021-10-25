@@ -6,6 +6,10 @@ export const light = {
         slateGray: "#6E7E91",
         scienceBlue: "#0366D6",
         buttonTextColor: "#FFFFFF",
+        headerTextColor: "#252525",
+        headerUnderlineColor: "#D1D4DB",
+        listItemColor: "#6E7E91",
+        markerColor: "#0366D6",
     },
     breakpoint: {
         mobileMax: "767px",
@@ -20,6 +24,10 @@ export const dark = {
         slateGray: "#FFFFFF",
         scienceBlue: "#2188FF",
         buttonTextColor: "#FFFFFF",
+        headerTextColor: "#FFFFFF",
+        headerUnderlineColor: "#D1D4DB",
+        listItemColor: "#FFFFFF",
+        markerColor: "#2188FF",
     },
     breakpoint: {
         mobileMax: "767px",
