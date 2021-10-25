@@ -51,6 +51,7 @@ export const ContactButton = styled.a`
     color: ${({ theme }) => theme.color.buttonTextColor};
     width: 154px;
     height: 49px;
+    transition: 0.3s;
 
     @media(max-width: 767px){
         width: 138px;
@@ -60,6 +61,10 @@ export const ContactButton = styled.a`
     &:focus{
         outline: none;
         box-shadow: 2px -2px 0px #8CC2FF, -2px 2px 0px #8CC2FF, 2px 2px 0px #8CC2FF, -2px -2px 0px #8CC2FF;
+    }
+
+    &:hover{
+        filter: brightness(120%);
     }
 
     &:active{
