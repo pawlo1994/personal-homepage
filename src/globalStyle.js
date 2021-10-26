@@ -4,7 +4,7 @@ const GlobalStyle = createGlobalStyle`
     body{
         background-color: ${({ theme }) => theme.color.whiteLilac};
         font-family: 'Inter', sans-serif;
-        transition: 0.5s;
+        transition: background-color 0.5s, color 1s;
 
         @media(max-width: 767px){
             padding: 0;
