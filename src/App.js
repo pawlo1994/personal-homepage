@@ -7,8 +7,11 @@ import { selectDarkMode } from "./themeSlice";
 import { Wrapper } from "./common/Wrapper";
 import { Section } from "./common/Section";
 import { skillset, toLearn } from "./features/author/skillsAndToLearn";
+import { useResultData } from "./useResultData";
 
 function App() {
+  const result = useResultData();
+  console.log(result);
   const darkMode = useSelector(selectDarkMode);
   return (
     <ThemeProvider theme={!darkMode ? light : dark}>
