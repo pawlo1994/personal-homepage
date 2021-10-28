@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StyledSection = styled.section`
     width: 100%;
@@ -7,6 +7,11 @@ export const StyledSection = styled.section`
     margin-top: 72px;
     box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
     border-radius: 4px;
+
+    ${({ project }) => project && css`
+        margin-top: 0;
+        border: 6px solid rgba(209, 213, 218, 0.3);
+    `}
 `;
 
 export const SectionHeader = styled.h2`
