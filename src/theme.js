@@ -10,6 +10,10 @@ export const light = {
         headerUnderlineColor: "#D1D4DB",
         listItemColor: "#6E7E91",
         markerColor: "#0366D6",
+        logoColor: "#0366D6",
+        projectsDescriptionColor: "#252525",
+        projectTitleColor: "#0366D6",
+        descriptionTextColor: "#6E7E91",
     },
     breakpoint: {
         mobileMax: "767px",
@@ -28,6 +32,10 @@ export const dark = {
         headerUnderlineColor: "#D1D4DB",
         listItemColor: "#FFFFFF",
         markerColor: "#2188FF",
+        logoColor: "#2188FF",
+        projectsDescriptionColor: "#FFFFFF",
+        projectTitleColor: "#FFFFFF",
+        descriptionTextColor: "#FFFFFF",
     },
     breakpoint: {
         mobileMax: "767px",
