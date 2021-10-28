@@ -1,14 +1,20 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Wrapper = styled.div`
     position: relative;
     padding: 16px;
     max-width: 1216px;
     width: 100%;
-    margin: 63px auto;
+    margin: 0 auto;
 
-    @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax})
-    {
-        margin: 32,67px auto;
-    }
+    ${({ projects }) => projects && css`
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 32px 32px;
+
+        @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax})
+        {
+            grid-template-columns: 1fr;
+        }
+    `}
 `;
