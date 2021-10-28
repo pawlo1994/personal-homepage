@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.js": "/personal-homepage/static/js/main.2f16881d.chunk.js",
-    "main.js.map": "/personal-homepage/static/js/main.2f16881d.chunk.js.map",
-    "runtime-main.js": "/personal-homepage/static/js/runtime-main.892d1f2c.js",
-    "runtime-main.js.map": "/personal-homepage/static/js/runtime-main.892d1f2c.js.map",
-    "static/js/2.b0aef15c.chunk.js": "/personal-homepage/static/js/2.b0aef15c.chunk.js",
-    "static/js/2.b0aef15c.chunk.js.map": "/personal-homepage/static/js/2.b0aef15c.chunk.js.map",
-    "static/js/3.e2fea6d4.chunk.js": "/personal-homepage/static/js/3.e2fea6d4.chunk.js",
-    "static/js/3.e2fea6d4.chunk.js.map": "/personal-homepage/static/js/3.e2fea6d4.chunk.js.map",
+    "main.js": "/personal-homepage/static/js/main.84a6752f.chunk.js",
+    "main.js.map": "/personal-homepage/static/js/main.84a6752f.chunk.js.map",
+    "runtime-main.js": "/personal-homepage/static/js/runtime-main.ed0f8c05.js",
+    "runtime-main.js.map": "/personal-homepage/static/js/runtime-main.ed0f8c05.js.map",
+    "static/js/2.43adc33e.chunk.js": "/personal-homepage/static/js/2.43adc33e.chunk.js",
+    "static/js/2.43adc33e.chunk.js.map": "/personal-homepage/static/js/2.43adc33e.chunk.js.map",
+    "static/js/3.009c4a63.chunk.js": "/personal-homepage/static/js/3.009c4a63.chunk.js",
+    "static/js/3.009c4a63.chunk.js.map": "/personal-homepage/static/js/3.009c4a63.chunk.js.map",
     "index.html": "/personal-homepage/index.html",
-    "static/js/2.b0aef15c.chunk.js.LICENSE.txt": "/personal-homepage/static/js/2.b0aef15c.chunk.js.LICENSE.txt",
+    "static/js/2.43adc33e.chunk.js.LICENSE.txt": "/personal-homepage/static/js/2.43adc33e.chunk.js.LICENSE.txt",
     "static/media/author.9cce596d.jpg": "/personal-homepage/static/media/author.9cce596d.jpg",
     "static/media/darkThemeOff.8fa7bb86.svg": "/personal-homepage/static/media/darkThemeOff.8fa7bb86.svg",
     "static/media/darkThemeOn.165bbd71.svg": "/personal-homepage/static/media/darkThemeOn.165bbd71.svg",
+    "static/media/githubLogo.2da5169c.svg": "/personal-homepage/static/media/githubLogo.2da5169c.svg",
     "static/media/mail.b9d89d94.svg": "/personal-homepage/static/media/mail.b9d89d94.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.892d1f2c.js",
-    "static/js/2.b0aef15c.chunk.js",
-    "static/js/main.2f16881d.chunk.js"
+    "static/js/runtime-main.ed0f8c05.js",
+    "static/js/2.43adc33e.chunk.js",
+    "static/js/main.84a6752f.chunk.js"
   ]
 }
