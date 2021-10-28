@@ -17,7 +17,6 @@ export const DarkModeSwitchWrapper = styled.div`
     justify-content: space-between;
     position: absolute;
     right: 0;
-    top: 0;
 `
 
 export const StyledDarkModeSwitch = styled.button`
