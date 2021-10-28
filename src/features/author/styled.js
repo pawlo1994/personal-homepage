@@ -4,10 +4,12 @@ export const AuthorWrapper = styled.div`
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: 66px;
+    margin-top: 66px;
 
     @media(max-width: 767px){
         grid-template-columns: 1fr;
         grid-gap: 12.67px;
+        margin-top: 0;
     };
 `
 
