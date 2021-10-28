@@ -6,6 +6,12 @@ export const useResultData = () => {
     useEffect(() => {
         setTimeout(() => {
             fetch("https://api.github.com/users/pawlo1994/repos")
+                .then(response => {
+                    if (!response.ok) {
+                        new Error(response.statusText);
+                    }
+                    return response;
+                })
                 .then(response => response.json())
                 .then(response => setData(response.map(({ html_url, description, name }) => {
                     if (!description) {
