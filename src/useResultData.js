@@ -1,11 +1,21 @@
-import { request } from "@octokit/request";
+import { useEffect } from "react";
+import { useState } from "react";
 
-export const useResultData = async () => {
-    const result = await request("GET /users/{user}/repos", {
-        user: "Pawlo1994",
-    });
+export const useResultData = () => {
+    const [data, setData] = useState([]);
+    useEffect(() => {
+        setTimeout(() => {
+            fetch("https://api.github.com/users/pawlo1994/repos")
+                .then(response => response.json())
+                .then(response => setData(response.map(({ html_url, description, name }) => {
+                    if (!description) {
+                        return ({ html_url, name });
+                    }
+                    return ({ html_url, name, description });
+                })))
+                .catch(error => console.error(error));
+        }, 1000)
+    }, []);
 
-    const resultData = Object.values(result.data).map(
-        ({ name, html_url, description }) => ({ name, html_url, description }))
-    return resultData;
+    return data;
 };

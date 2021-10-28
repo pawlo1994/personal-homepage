@@ -8,10 +8,11 @@ import { Wrapper } from "./common/Wrapper";
 import { Section } from "./common/Section";
 import { skillset, toLearn } from "./features/author/skillsAndToLearn";
 import { useResultData } from "./useResultData";
+import { StyledSection } from "./common/Section/styled";
 
 function App() {
-  const result = useResultData();
-  console.log(result);
+  const data = useResultData();
+
   const darkMode = useSelector(selectDarkMode);
   return (
     <ThemeProvider theme={!darkMode ? light : dark}>
@@ -26,6 +27,13 @@ function App() {
           header="What I want to learn next 🚀"
           listContent={toLearn}
         />
+        {data.map(({ html_url, name, description }) =>
+          <StyledSection>
+            <h2>{name}</h2>
+            <a href={html_url}>{html_url}</a>
+            <p>{description}</p>
+          </StyledSection>
+        )}
       </Wrapper>
     </ThemeProvider>
   );
