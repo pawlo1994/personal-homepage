@@ -4,7 +4,7 @@ import { ProjectDescription, ProjectsDescription, ProjectsHeader, ProjectsLogo, 
 import { Wrapper } from "../../common/Wrapper";
 
 export const Projects = () => {
-    const data = useResultData();
+    const { data, status } = useResultData();
     return (
         <>
             <ProjectsTop>
@@ -17,12 +17,12 @@ export const Projects = () => {
                 </ProjectsDescription>
             </ProjectsTop>
             <Wrapper projects>
-                {data.map(({ html_url, name, description }) =>
+                {status === "done" ? data.map(({ html_url, name, description }) =>
                     <StyledSection project>
                         <ProjectTitle>{name}</ProjectTitle>
                         <ProjectDescription>{description}</ProjectDescription>
                         Code: <a href={html_url}>Repo link</a>
-                    </StyledSection>)
+                    </StyledSection>) : status === "loading" ? "Loading projects, please wait..." : "Oops, something went wrong..."
                 }
             </Wrapper>
         </>
