@@ -17,7 +17,6 @@ export const HeaderTitle = styled.h1`
     color: ${({ theme }) => theme.color.mineShaft};
     font-size: 38px;
     line-height: 46px;
-    letter-spacing: 0.05em;
     margin: 0 0 35px;
 
     @media(max-width:767px){
@@ -29,7 +28,6 @@ export const HeaderTitle = styled.h1`
 export const Description = styled.p`
     color: ${({ theme }) => theme.color.slateGray};
     line-height: 28px;
-    letter-spacing: 0.05em;
     margin: 0 0 32px;
 
     @media(max-width: 767px){
@@ -42,7 +40,6 @@ export const ContactButton = styled.a`
     align-items: center;
     justify-content: space-around;
     font-weight: 600;
-    letter-spacing: 0.05em;
     padding: 12px 16px;
     border: 1px solid rgba(209, 213, 218, 0.3);
     border-radius: 4px;
