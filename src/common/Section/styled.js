@@ -11,6 +11,11 @@ export const StyledSection = styled.section`
     ${({ project }) => project && css`
         margin-top: 0;
         border: 6px solid rgba(209, 213, 218, 0.3);
+
+        &:hover{
+            border: 6px solid rgba(3, 102, 214, 0.2);
+            box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
+        }
     `}
 `;
 
