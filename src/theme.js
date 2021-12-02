@@ -14,6 +14,7 @@ export const light = {
         projectsDescriptionColor: "#252525",
         projectTitleColor: "#0366D6",
         descriptionTextColor: "#6E7E91",
+        loadingTextColor: "#252525",
     },
     breakpoint: {
         mobileMax: "767px",
@@ -36,6 +37,7 @@ export const dark = {
         projectsDescriptionColor: "#FFFFFF",
         projectTitleColor: "#FFFFFF",
         descriptionTextColor: "#FFFFFF",
+        loadingTextColor: "#FFFFFF",
     },
     breakpoint: {
         mobileMax: "767px",
