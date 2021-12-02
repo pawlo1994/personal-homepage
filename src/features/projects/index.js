@@ -23,7 +23,12 @@ export const Projects = () => {
                         <StyledSection project key={name}>
                             <ProjectTitle>{name}</ProjectTitle>
                             <ProjectDescription>{description}</ProjectDescription>
-                            Code: <a href={html_url} target="_blank" rel="noreferrer noopener">Link to Repo</a>
+                            Code:
+                            <a href={html_url}
+                                target="_blank"
+                                rel="noreferrer noopener">
+                                Link to Repo
+                            </a>
                         </StyledSection>
                     )}
                 </Wrapper>)
