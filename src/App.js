@@ -7,7 +7,7 @@ import { selectDarkMode } from "./themeSlice";
 import { Wrapper } from "./common/Wrapper";
 import { Section } from "./common/Section";
 import { skillset, toLearn } from "./features/author/skillsAndToLearn";
-import { Projects } from "./features/projects";
+import { Projects } from "./features/Projects";
 
 function App() {
 
