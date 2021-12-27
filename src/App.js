@@ -8,6 +8,7 @@ import { Wrapper } from "./common/Wrapper";
 import { Section } from "./common/Section";
 import { skillset, toLearn } from "./features/author/skillsAndToLearn";
 import { Projects } from "./features/Projects";
+import { Contact } from "./features/Contact";
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           listContent={toLearn}
         />
         <Projects />
+        <Contact />
       </Wrapper>
     </ThemeProvider>
   );
