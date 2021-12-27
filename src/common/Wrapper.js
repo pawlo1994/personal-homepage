@@ -12,10 +12,12 @@ export const Wrapper = styled.div`
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-gap: 32px 32px;
+        margin-bottom: 120px;
 
         @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax})
         {
             grid-template-columns: 1fr;
+            margin-bottom: 48px;
         }
     `}
 `;
