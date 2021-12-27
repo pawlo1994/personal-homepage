@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
     margin: 0 auto;
 
     ${({ projects }) => projects && css`
+        padding: 0;
         color: ${({ theme }) => theme.color.projectsDescriptionColor};
         display: grid;
         grid-template-columns: repeat(2,1fr);
