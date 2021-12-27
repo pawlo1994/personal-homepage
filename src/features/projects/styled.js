@@ -40,3 +40,14 @@ export const ProjectDescription = styled.p`
     color: ${({ theme }) => theme.color.descriptionTextColor};
     font-size: 18px;
 `;
+
+export const ProjectLink = styled.a`
+    margin-left: 8px;
+    color: ${({ theme }) => theme.color.projectLinkColor};
+    text-decoration: none;
+    border-bottom: 1px solid ${({ theme }) => theme.color.projectLinkColor};
+
+    &:hover{
+        filter: brightness(120%);
+    }
+`;

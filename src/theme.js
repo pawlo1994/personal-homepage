@@ -13,8 +13,10 @@ export const light = {
         logoColor: "#0366D6",
         projectsDescriptionColor: "#252525",
         projectTitleColor: "#0366D6",
+        projectLinkColor: "#0366D6",
         descriptionTextColor: "#6E7E91",
         loadingTextColor: "#252525",
+        sectionColor: "#FFFFFF",
     },
     breakpoint: {
         mobileMax: "767px",
@@ -36,8 +38,10 @@ export const dark = {
         logoColor: "#2188FF",
         projectsDescriptionColor: "#FFFFFF",
         projectTitleColor: "#FFFFFF",
+        projectLinkColor: "#2188FF",
         descriptionTextColor: "#FFFFFF",
         loadingTextColor: "#FFFFFF",
+        sectionColor: "#363636",
     },
     breakpoint: {
         mobileMax: "767px",

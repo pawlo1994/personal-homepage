@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const StyledSection = styled.section`
     width: 100%;
     padding: 32px;
-    background-color: ${({ theme }) => theme.color.white};
+    background-color: ${({ theme }) => theme.color.sectionColor};
     margin-top: 72px;
     box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
     border-radius: 4px;
