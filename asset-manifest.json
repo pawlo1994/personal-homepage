@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/personal-homepage/static/js/main.e4204883.chunk.js",
-    "main.js.map": "/personal-homepage/static/js/main.e4204883.chunk.js.map",
+    "main.js": "/personal-homepage/static/js/main.e3faf6c1.chunk.js",
+    "main.js.map": "/personal-homepage/static/js/main.e3faf6c1.chunk.js.map",
     "runtime-main.js": "/personal-homepage/static/js/runtime-main.ed0f8c05.js",
     "runtime-main.js.map": "/personal-homepage/static/js/runtime-main.ed0f8c05.js.map",
     "static/js/2.d186350a.chunk.js": "/personal-homepage/static/js/2.d186350a.chunk.js",
@@ -16,11 +16,12 @@
     "static/media/github.dbc2817c.svg": "/personal-homepage/static/media/github.dbc2817c.svg",
     "static/media/githubLogo.fe89a47e.svg": "/personal-homepage/static/media/githubLogo.fe89a47e.svg",
     "static/media/loadingSpinner.f0cf9f6a.svg": "/personal-homepage/static/media/loadingSpinner.f0cf9f6a.svg",
-    "static/media/mail.b9d89d94.svg": "/personal-homepage/static/media/mail.b9d89d94.svg"
+    "static/media/mail.b9d89d94.svg": "/personal-homepage/static/media/mail.b9d89d94.svg",
+    "static/media/warning.0c3598f6.svg": "/personal-homepage/static/media/warning.0c3598f6.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.ed0f8c05.js",
     "static/js/2.d186350a.chunk.js",
-    "static/js/main.e4204883.chunk.js"
+    "static/js/main.e3faf6c1.chunk.js"
   ]
 }
