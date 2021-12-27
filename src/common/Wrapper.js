@@ -21,4 +21,18 @@ export const Wrapper = styled.div`
             margin-bottom: 48px;
         }
     `}
+
+    ${({ error }) => error && css`
+        margin-top: 60px;
+        color: ${({ theme }) => theme.color.projectsDescriptionColor};
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax})
+        {
+            margin-top: 20px;
+        }
+    `}
 `;

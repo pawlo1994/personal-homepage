@@ -11,6 +11,7 @@ import {
 } from "./styled";
 import { Wrapper } from "../../common/Wrapper";
 import { Loading } from "./Loading";
+import { Error } from "./Error";
 
 export const Projects = () => {
     const { data, status } = useResultData();
@@ -41,7 +42,7 @@ export const Projects = () => {
                     )}
                 </Wrapper>)
                 : status === "loading" ? <Loading />
-                    : "Oops, something went wrong..."
+                    : <Error />
             }
         </>
     );
