@@ -19,6 +19,7 @@ export const ProjectsHeader = styled.h2`
 
 export const ProjectsLogo = styled(GithubLogo)`
     fill: ${({ theme }) => theme.color.logoColor};
+    stroke: ${({ theme }) => theme.color.logoColor};
     width: 40px;
     height: 40px;
 `;
@@ -43,9 +44,9 @@ export const ProjectDescription = styled.p`
 
 export const ProjectLink = styled.a`
     margin-left: 8px;
-    color: ${({ theme }) => theme.color.projectLinkColor};
+    color: ${({ theme }) => theme.color.linkColor};
     text-decoration: none;
-    border-bottom: 1px solid ${({ theme }) => theme.color.projectLinkColor};
+    border-bottom: 1px solid ${({ theme }) => theme.color.linkColor};
 
     &:hover{
         filter: brightness(120%);
