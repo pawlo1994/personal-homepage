@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as github } from "../Contact/github.svg";
+import { ReactComponent as github } from "../../common/github.svg";
 
 export const ContactTitle = styled.h2`
     font-size: 12px;
@@ -40,6 +40,7 @@ export const ContactDescription = styled.p`
 `;
 
 export const GithubLink = styled(github)`
+    border-radius: 50%;
     stroke: ${({ theme }) => theme.color.contactColor};
     fill: ${({ theme }) => theme.color.contactColor};
 

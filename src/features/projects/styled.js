@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as GithubLogo } from "./githubLogo.svg";
+import { ReactComponent as github } from "../../common/github.svg";
 
 export const ProjectsTop = styled.section`
     margin-top: 72px;
@@ -17,7 +17,8 @@ export const ProjectsHeader = styled.h2`
     margin: 12px 0 0;
 `;
 
-export const ProjectsLogo = styled(GithubLogo)`
+export const ProjectsLogo = styled(github)`
+    border-radius: 50%;
     fill: ${({ theme }) => theme.color.logoColor};
     stroke: ${({ theme }) => theme.color.logoColor};
     width: 40px;
