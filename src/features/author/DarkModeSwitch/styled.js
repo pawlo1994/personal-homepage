@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { ReactComponent as darkModeSwitchButton } from "../DarkModeSwitch/darkTheme.svg";
 
 export const DarkModeSwitchLabel = styled.span`
     color: ${({ theme }) => theme.color.slateGray};
@@ -19,7 +20,7 @@ export const DarkModeSwitchWrapper = styled.div`
     right: 0;
 `
 
-export const StyledDarkModeSwitch = styled.button`
+export const StyledDarkModeSwitch = styled(darkModeSwitchButton)`
     align-items: center;
     justify-content: center;
     background-color: unset;
@@ -32,4 +33,9 @@ export const StyledDarkModeSwitch = styled.button`
     &:hover{
         cursor: pointer;
     }
+
+    ${({ dark }) => dark && css`
+        transform: rotate(180deg);
+        filter: brightness(0.7);
+    `}
     `;
