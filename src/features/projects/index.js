@@ -3,6 +3,8 @@ import { useResultData } from "./useResultData";
 import {
     ProjectDescription,
     ProjectLink,
+    ProjectLinkList,
+    ProjectLinkListItem,
     ProjectsDescription,
     ProjectsHeader,
     ProjectsLogo,
@@ -14,7 +16,7 @@ import { Loading } from "./Loading";
 import { Error } from "./Error";
 
 export const Projects = () => {
-    const { data, status } = useResultData();
+    const { data, status, userName } = useResultData();
     return (
         <>
             <ProjectsTop>
@@ -28,16 +30,29 @@ export const Projects = () => {
             </ProjectsTop>
             {status === "done" ? (
                 <Wrapper projects>
-                    {data.map(({ html_url, name, description }) =>
+                    {data.map(({ html_url, name, description, has_pages }) =>
                         <StyledSection project key={name}>
                             <ProjectTitle>{name}</ProjectTitle>
                             <ProjectDescription>{description}</ProjectDescription>
-                            Code:
-                            <ProjectLink href={html_url}
-                                target="_blank"
-                                rel="noreferrer noopener">
-                                Link to Repo
-                            </ProjectLink>
+                            <ProjectLinkList>
+                                <ProjectLinkListItem>Code:
+                                    <ProjectLink href={html_url}
+                                        target="_blank"
+                                        rel="noreferrer noopener">
+                                        Link to Repo
+                                    </ProjectLink>
+                                </ProjectLinkListItem>
+                                {has_pages &&
+                                    <ProjectLinkListItem>
+                                        Demo:
+                                        <ProjectLink href={`https://${userName}.github.io/${name}`}
+                                            target="_blank"
+                                            rel="noreferrer noopener">
+                                            Link to Demo
+                                        </ProjectLink>
+                                    </ProjectLinkListItem>
+                                }
+                            </ProjectLinkList>
                         </StyledSection>
                     )}
                 </Wrapper>)

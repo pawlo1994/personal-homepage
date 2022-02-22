@@ -53,3 +53,12 @@ export const ProjectLink = styled.a`
         filter: brightness(120%);
     }
 `;
+
+export const ProjectLinkList = styled.ul`
+    list-style-type: none;
+    padding: 5px 0;
+`;
+
+export const ProjectLinkListItem = styled.li`
+    margin: 5px 0;
+`;
