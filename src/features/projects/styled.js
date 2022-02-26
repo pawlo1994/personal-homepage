@@ -36,11 +36,19 @@ export const ProjectTitle = styled.h2`
     color: ${({ theme }) => theme.color.projectTitleColor};
     font-weight: bold;
     font-size: 24px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}){
+        font-size: 16px;
+    }
 `;
 
 export const ProjectDescription = styled.p`
     color: ${({ theme }) => theme.color.descriptionTextColor};
     font-size: 18px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}){
+        font-size: 14px;
+    }
 `;
 
 export const ProjectLink = styled.a`
