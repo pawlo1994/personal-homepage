@@ -13,6 +13,7 @@ export const Button = styled.a`
     color: ${({ theme }) => theme.color.buttonTextColor};
     width: 154px;
     height: 49px;
+    transition: 0.3s;
 
     @media(max-width: 767px){
         width: 138px;
