@@ -7,6 +7,7 @@ export const StyledSection = styled.section`
     margin-top: 72px;
     box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
     border-radius: 4px;
+    transition: 0.3s;
 
     ${({ project }) => project && css`
         margin-top: 0;
@@ -33,6 +34,10 @@ export const SectionList = styled.ul`
     font-size: 18px;
     columns: 3;
 
+    @media(max-width: ${({ theme }) => theme.breakpoint.tabletMax}){
+        columns: 2;
+    }
+
     @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}){
         columns: 1;
     }
@@ -44,7 +49,7 @@ export const SectionListItem = styled.li`
     margin-bottom: 8px;
 
     &::marker{
-        width: 9px;
+        font-size: 24px;
         color: ${({ theme }) => theme.color.markerColor};
     };
 `;
