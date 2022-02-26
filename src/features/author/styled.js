@@ -4,7 +4,7 @@ export const AuthorWrapper = styled.div`
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: 66px;
-    margin-top: 66px;
+    margin-top: 0px;
 
     @media(max-width: 767px){
         grid-template-columns: 1fr;
@@ -14,8 +14,8 @@ export const AuthorWrapper = styled.div`
 `
 
 export const Image = styled.img`
-    width: 398px;
-    height: 398px;
+    max-width: 398px;
+    width: 30vw;
     border-radius: 50%;
 
     @media(max-width: 767px){
