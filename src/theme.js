@@ -1,3 +1,10 @@
+const breakpoints = {
+    breakpoint: {
+        mobileMax: "767px",
+        tabletMax: "1023px",
+    },
+};
+
 export const light = {
     color: {
         white: "#FFFFFF",
@@ -18,10 +25,10 @@ export const light = {
         loadingTextColor: "#252525",
         sectionColor: "#FFFFFF",
         contactColor: "#252525",
+        darkModeIconColor: "#FFFFFF",
+        darkModeIconFieldColor: "#E5E5E5",
     },
-    breakpoint: {
-        mobileMax: "767px",
-    }
+    ...breakpoints,
 };
 
 export const dark = {
@@ -44,8 +51,8 @@ export const dark = {
         loadingTextColor: "#FFFFFF",
         sectionColor: "#363636",
         contactColor: "#FFFFFF",
+        darkModeIconColor: "#252525",
+        darkModeIconFieldColor: "#363636",
     },
-    breakpoint: {
-        mobileMax: "767px",
-    }
+    ...breakpoints,
 };
