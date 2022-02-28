@@ -1,13 +1,14 @@
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { makeDataURL } from "./urlFunctions";
+
+const userName = "pawlo1994";
 
 export const useResultData = () => {
-    const userName = "pawlo1994";
     const [data, setData] = useState([]);
     const [status, setStatus] = useState("loading");
     useEffect(() => {
         setTimeout(() => {
-            fetch(`https://api.github.com/users/${userName}/repos`)
+            fetch(makeDataURL(userName))
                 .then(response => {
                     if (!response.ok) {
                         new Error(response.statusText);

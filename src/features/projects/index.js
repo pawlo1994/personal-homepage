@@ -14,6 +14,7 @@ import {
 import { Wrapper } from "../../common/Wrapper";
 import { Loading } from "./Loading";
 import { Error } from "./Error";
+import { makeGithubPagesURL } from "./urlFunctions";
 
 export const Projects = () => {
     const { data, status, userName } = useResultData();
@@ -45,7 +46,7 @@ export const Projects = () => {
                                 {has_pages &&
                                     <ProjectLinkListItem>
                                         Demo:
-                                        <ProjectLink href={`https://${userName}.github.io/${name}`}
+                                        <ProjectLink href={makeGithubPagesURL(userName, name)}
                                             target="_blank"
                                             rel="noreferrer noopener">
                                             Link to Demo
